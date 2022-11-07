@@ -11,6 +11,7 @@ function init() {
   addRecipesToDocument(recipes);
   // Add the event listeners to the form elements
   initFormHandler();
+  
 }
 
 /**
