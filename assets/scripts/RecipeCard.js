@@ -94,8 +94,8 @@ class RecipeCard extends HTMLElement {
         font-size: 12px;
       }`
 
-    this.shadow.appendChild(style);
-    this.shadow.appendChild(article);
+    shadow.appendChild(style);
+    shadow.appendChild(article);
 
     console.log("RecipeCard constructor called");
   }
