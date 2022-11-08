@@ -50,9 +50,8 @@ function addRecipesToDocument(recipes) {
 
   for (let i = 0; i < recipes.length; i++) {
     let recipeCard = document.createElement('recipe-card');
-
-    // recipeCard.data = {"imgSrc": recipes[i].imgSrc};
-
+    recipeCard.data = recipes[i];
+    mainElem.append(recipeCard);
   }
 }
 
@@ -66,6 +65,8 @@ function saveRecipesToStorage(recipes) {
   // B1. TODO - Complete the functionality as described in this function
   //            header. It is possible in only a single line, but should
   //            be no more than a few lines.
+
+  
 }
 
 /**
