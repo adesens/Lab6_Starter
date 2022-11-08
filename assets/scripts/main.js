@@ -11,7 +11,6 @@ function init() {
   addRecipesToDocument(recipes);
   // Add the event listeners to the form elements
   initFormHandler();
-  
 }
 
 /**
@@ -25,6 +24,12 @@ function getRecipesFromStorage() {
   // A9. TODO - Complete the functionality as described in this function
   //           header. It is possible in only a single line, but should
   //           be no more than a few lines.
+
+  var recipeList = JSON.parse(localStorage.getItem("recipes"));
+
+  console.log("getRecipesFromStorage called");
+
+  return recipeList;
 }
 
 /**
@@ -40,6 +45,15 @@ function addRecipesToDocument(recipes) {
   //            create a <recipe-card> element for each one, and populate
   //            each <recipe-card> with that recipe data using element.data = ...
   //            Append each element to <main>
+
+  var mainElem = document.querySelector("main");
+
+  for (let i = 0; i < recipes.length; i++) {
+    // let recipeCard = document.createElement('recipe-card');
+    // // recipeCard.data = {imgSrc: recipes[i].imgSrc}, {imgAlt: recipes[i].imgAlt}
+    
+    // // console.log("imgSrc: " + recipes[i].imgSrc);
+  }
 }
 
 /**
