@@ -14,10 +14,10 @@ class RecipeCard extends HTMLElement {
     // A5. TODO - Append the <style> and <article> elements to the Shadow DOM
 
     const shadow = this.attachShadow({mode: "open"});
-    const article = document.createElement("article");
-    let style = document.createElement("style");
+    const myArticle = document.createElement("article");
+    const myStyle = document.createElement("style");
 
-    style.textContent = `
+    myStyle.textContent = `
       * {
         font-family: sans-serif;
         margin: 0;
@@ -94,8 +94,8 @@ class RecipeCard extends HTMLElement {
         font-size: 12px;
       }`
 
-    shadow.appendChild(style);
-    shadow.appendChild(article);
+    shadow.appendChild(myStyle);
+    shadow.appendChild(myArticle);
 
     console.log("RecipeCard constructor called");
   }
@@ -132,7 +132,7 @@ class RecipeCard extends HTMLElement {
     //           another <article>). You should use Template literals (tempalte strings) 
     //           and element.innerHTML for this.
 
-    var art = document.querySelector(article);
+    var art = document.querySelector(myArticle);
     art.innerHTML = `
     <img src="${data.imgSrc}" alt="${data.imgAlt}">
       <p class="title">
