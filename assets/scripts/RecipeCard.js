@@ -133,20 +133,20 @@ class RecipeCard extends HTMLElement {
     //           and element.innerHTML for this.
 
     var art = document.querySelector(article);
-    art.textContent = `
-    <img src="${this.innerHTML.imgSrc}" alt="${this.innerHTML.imgAlt}">
+    art.innerHTML = `
+    <img src="${data.imgSrc}" alt="${data.imgAlt}">
       <p class="title">
-      <a href="${this.innerHTML.titleLnk}">${this.innerHTML.titleTxt}</a>
+      <a href="${data.titleLnk}">${data.titleTxt}</a>
     </p>
-    <p class="organization">${this.innerHTML.organization}</p>
+    <p class="organization">${data.organization}</p>
     <div class="rating">
-      <span>${this.innerHTML.rating}</span>
+      <span>${data.rating}</span>
       <img src="/assets/images/icons/5-star.svg" alt="5 stars">
-      <span>(${this.innerHTML.numRatings})</span>
+      <span>(${data.numRatings})</span>
     </div>
-    <time>${this.innerHTML.lengthTime}</time>
+    <time>${data.lengthTime}</time>
     <p class="ingredients">
-      ${this.innerHTML.ingredients}
+      ${data.ingredients}
     </p>`;
     
     console.log(".data property set on this element");

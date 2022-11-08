@@ -50,9 +50,9 @@ function addRecipesToDocument(recipes) {
 
   for (let i = 0; i < recipes.length; i++) {
     // let recipeCard = document.createElement('recipe-card');
-    // // recipeCard.data = {imgSrc: recipes[i].imgSrc}, {imgAlt: recipes[i].imgAlt}
+    // recipeCard.data = {imgSrc: recipes[i].imgSrc}, {imgAlt: recipes[i].imgAlt}
     
-    // // console.log("imgSrc: " + recipes[i].imgSrc);
+    // console.log("imgSrc: " + recipes[i].imgSrc);
   }
 }
 
